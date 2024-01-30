@@ -7,13 +7,15 @@ const style =StyleSheet.create({
         paddingHorizontal:10,
         paddingVertical:80,
         alignItems:"center",
-        gap:10
+        gap:10,
+        backgroundColor:'#2a3770'
     },
     header:{
         width:'100%',
         height:'46%',
         alignItems:"center",
-        gap:30
+        gap:30,
+        
     },
 
     contentHeader:{
@@ -21,7 +23,14 @@ const style =StyleSheet.create({
         height:'70%',
         borderRadius:20,
         overflow:"hidden",
-        borderWidth:1,
+        shadowColor: "#000000",
+        shadowOffset: {
+        width: 0,
+        height: 3,
+        },
+        shadowOpacity:  0.17,
+        shadowRadius: 3.05,
+        elevation: 4
         
     },
     contentHeaderBlur:{
@@ -38,7 +47,10 @@ const style =StyleSheet.create({
         fontWeight:"600",
         fontVariant:["small-caps"]
     },
-    Text:{},
+    Text:{
+        color:'#ffffffcf',
+        fontSize:15,
+    },
     imput:{
         backgroundColor:'#ffffff94',
         width:'100%',
@@ -55,43 +67,83 @@ const style =StyleSheet.create({
         alignItems:"center",
         width:'96%',
         height:45,
-        backgroundColor:'#d14242ff',
+        overflow:"hidden",
         borderRadius:8,
         
     },
     TextTitle:{
         fontSize:19,
-        color:'#000',
+        color:'#ffffff',
         fontWeight:"500",
+      
+        
        
     },
-    TextSub:{},
+    TextSub:{
+        fontSize:19,
+        color:'#ffffff',
+        fontWeight:"500",
+        textAlign:"center",
+        alignItems:"center",
+        marginBottom:20
+    },
     main:{
         width:'100%',
         minHeight:100,
         overflow:"hidden",
         borderRadius:20,
-        borderWidth:1,
-        height:'50%'
+        height:'50%',
+        
+      
         
         
     },
-    mainBlur:{
-        flex:1,
-         padding:10,
-        borderRadius:20,
-        overflow:"hidden",
-        borderWidth:1,
-        paddingVertical:17,
-        
 
-    },
     scroll:{
         width:"100%",
         height:'100%',
         paddingBottom:30,
         paddingTop:10,
-        gap:10
+        paddingHorizontal:20
+        
+    },
+    bola1:{
+        position:"absolute",
+        width:100,
+        height:100,
+        backgroundColor:'#c93d25',
+        borderRadius:1000,
+
+        shadowColor: '##b1aa2a',
+        shadowOffset: {
+        width: 0,
+        height: 3,
+        },
+        shadowOpacity:  0.17,
+        shadowRadius: 3.05,
+        elevation: 4,
+
+        transform:[{translateX:-150},{translateY:500}]
+
+    },
+    bola2:{
+        position:"absolute",
+        width:100,
+        height:100,
+        backgroundColor:'#9e671e',
+        borderRadius:1000,
+
+        shadowColor: "##9e671e",
+        shadowOffset: {
+        width: 0,
+        height: 3,
+        },
+        shadowOpacity:  0.17,
+        shadowRadius: 3.05,
+        elevation: 4,
+        
+        transform:[{translateX:140},{translateY:130}]
+
     }
 })
 export {style}
